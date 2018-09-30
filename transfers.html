@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <meta charset="utf-8">
+
+  <style>
+  body {
+    font-family: arial, sans-serif;
+    max-width: 100%;
+    position: inherit;
+  }
+  #logo{
+    height:130px ;
+    width:300px;
+  }
+  /* Navbar container */
+  .navbar {
+    background-color: #333;
+    overflow: hidden;
+  }
+  /* Links inside the navbar */
+  .navbar a ,.navbar2 a{
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  .navbar2 {
+    background-color: black;
+    overflow:hidden;
+  }
+  /* Add a yellow background color to navbar links on hover */
+  .navbar a:hover, .navbar2 a:hover, .dropdown:hover .dropbtn {
+    background-color: #ffd700;
+  }
+  /* Move options away from margin*/
+  #payments {
+    margin-left: 7%;
+  }
+  .imput{
+    font-family: arial, sans-serif;
+    position: static;
+    margin-right: 80%;
+    margin-left: 20%;
+  }
+  /* Submit button*/
+    .button{
+      font-family:  arial, sans-serif;
+      position:relative;
+      background-color: #333;
+      border: none;
+      color: white ;
+      padding: 16px 32px;
+      text-align: center;
+      font-size: 16px;
+      transition: 0.3s;
+      display: in-line;
+      text-decoration: none;
+      cursor: pointer;
+      margin-left: -2px;
+    }
+  .button:hover {
+    opacity: 1;
+    background-color:#ffd700;
+  }
+  .search-container{
+    float: right;
+    padding: 14px 16px;
+    cursor: pointer;
+  }
+  .search, .submit {
+    padding: 8px 8px;
+  }
+  #transactions {
+    margin-left: 7%;
+  }
+  .text {
+    margin-left: 7%
+  }
+  table {
+    border-collapse: collapse;
+    width: 90%;
+    margin-left: 5%
+  }
+  td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+  }
+  th{
+    background-color: #dddddd;
+  }
+  footer{
+    position: relative;
+    min-height: 100%
+    bottom: 0;
+  }
+  </style>
+</head>
+
+<body>
+  <header>
+    <img id = "logo" src="logo.jpg"></img>
+    <button class="button" style="float: Right; margin-right:5%; margin-top:2%;">Log Out</button>
+
+
+    <!-- navbar -->
+    <div class="navbar">
+      <!-- Main tab -->
+      <a href="home.html">Home</a>
+      <a href="makepayment.html">Payments</a>
+      <a href="accounts.html">Accounts</a>
+      <a href="buyutilities.html">Buy Utilities</a>
+      <a href="transfers.html">Transfers</a>
+      <a href="support.html">Online Support</a>
+
+      <!-- Search box -->
+      <div class="search-container">
+        <form action="/action_page.php">
+          <input class="search" type="text" placeholder="Search.." name="search">
+          <button class="button" type="submit"><i class="fa fa-search"></i></button>
+        </form>
+      </div>
+    </div>
+  </header>
+
+  <!-- seccond navbar -->
+  <div class="navbar2">
+    <a href="transfers.html">Inter-Account Transfers</a>
+  </div>
+</div>
+
+<!-- Inter account transfers -->
+<h1 style="margin-left: 5%">Inter-Account Transfers</h1>
+<div id="transactions">
+  <h2> 1. Accounts </h2>
+  <p> Transfer From:
+    <select class="imput">
+      <option value="">Select Account</option>
+      <option value="Student Account">Student Account</option>
+      <option value="Business Account">Business Account</option>
+      <option value="Investment Account">Investment Account</option>
+      <option value="Savings Account">Savings Account</option>
+    </select>
+  </p>
+  <p> Transfer To:
+    <select class="imput">
+      <option value="">Select Account</option>
+      <option value="Student Account">Student Account</option>
+      <option value="Business Account">Business Account</option>
+      <option value="Investment Account">Investment Account</option>
+      <option value="Savings Account">Savings Account</option>
+    </select>
+  </p>
+  <h2> 2. Amount </h2>
+  Enter amount to transfer: <input class="imput" type="text" name="amount" value="">
+  <h2> 3. References </h2>
+  <p> From Reference: <input class="imput" type="text" name="amount" value=""></p>
+  <p> To Reference: <input class="imput" type="text" name="amount" value=""></p>
+  <p><b>Please note</b></p>
+  <p>Your transfer may take up to 24 hours to reflect in your account.</p>
+</div>
+
+<!--Submit buttons-->
+<div class="text">
+  <button class="button">Transfer</button>
+  <button class="button">Cancel</button>
+</div>
+
+<br>
+<br>
+<!-- Footer -->
+<footer>
+  <center>
+    <p><a href =''>Terms Of Use</a> | <a href =''>Banking Regulations</a>  | <a href =''>Privacy Policy</a>  | <a href =''>Security Centre</a></p>
+    <p> © Copyright. Bank Of The Sun Limited. All rights reserved.</p>
+    <!-- Social media icons -->
+    <i class="fab fa-facebook-f fa-3x"></i>
+    <i class="fab fa-twitter fa-3x"></i>
+    <i class="fab fa-instagram fa-3x"></i>
+  </center>
+</footer>
+</body>
+</html>
